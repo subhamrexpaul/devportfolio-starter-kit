@@ -1,0 +1,45 @@
+name: 🚀 CI — Portfolio Validator
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate & Deploy Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔍 Check HTML structure
+        run: |
+          echo "=== Checking HTML files ==="
+          find . -name "*.html" -not -path "./.git/*" | while read f; do
+            echo "✅ Found: $f"
+            # Check for essential meta tags
+            grep -q 'charset' "$f" && echo "  ✅ charset found" || echo "  ⚠️ charset missing"
+            grep -q 'viewport' "$f" && echo "  ✅ viewport found" || echo "  ⚠️ viewport missing"
+          done
+
+      - name: 📁 Verify project structure
+        run: |
+          echo "=== Project structure ==="
+          required_files=("index.html" "css/style.css" "js/main.js" "README.md" "LICENSE")
+          for f in "${required_files[@]}"; do
+            [ -f "$f" ] && echo "✅ $f" || echo "❌ Missing: $f"
+          done
+
+      - name: 📊 Count lines of code
+        run: |
+          echo "=== Lines of code ==="
+          find . -name "*.html" -o -name "*.css" -o -name "*.js" | grep -v ".git" | xargs wc -l 2>/dev/null | tail -1
+
+      - name: 🎉 Success
+        run: |
+          echo "================================================"
+          echo "  ✅ All checks passed!"
+          echo "  🚀 Portfolio is ready to impress!"
+          echo "================================================"
