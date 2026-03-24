@@ -1145,3 +1145,9 @@ section {
     padding: 20px;
   }
 }
+
+/* Contact form enhancement - Pull Shark Bronze */
+.contact-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
