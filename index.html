@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subham Paul — Full Stack Developer & Web3 Explorer from India. React, Node.js, Python, Blockchain." />
+  <meta name="theme-color" content="#6B46FF" />
+  <meta property="og:title" content="Subham Paul | Developer Portfolio" />
+  <meta property="og:description" content="Full Stack Developer from India. React, Node.js, Web3." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://subhamrexpaul.github.io/devportfolio-starter-kit" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Subham Paul | Developer Portfolio" />
+  <meta name="twitter:description" content="Full Stack Developer from India. React, Node.js, Web3." />
+  <meta name="twitter:creator" content="@subhampau1" />
+  <title>Subham Paul | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,600,700&f[]=cabinet-grotesk@400,500,700&display=swap">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Navigation -->
+  <nav class="nav" data-nav>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">SP</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" data-nav-menu>
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="21"/>
+              <line x1="1" y1="12" x2="21" y2="12"/>
+              <line x1="4.22" y1="4.22" x2="9.78" y2="9.78"/>
+              <line x1="10.22" y1="10.22" x2="15.78" y2="15.78"/>
+              <line x1="4.22" y1="19.78" x2="9.78" y2="15.22"/>
+              <line x1="10.22" y1="15.22" x2="15.78" y2="10.78"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-particles" data-particles></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="pulse-ring"></span>
+        <span>Open to opportunities</span>
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="title-line">Subham Paul</span>
+      </h1>
+      <div class="hero-subtitle reveal">
+        <span class="typewriter" data-typewriter='["Full Stack Developer", "Web3 Explorer", "Open Source Builder", "Problem Solver"]'></span>
+      </div>
+      <p class="hero-description reveal">
+        Striving for perfect code in an imperfect matrix.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about" aria-label="Scroll down">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="8 12 12 16 16 12"/>
+            <line x1="12" y1="8" x2="12" y2="20"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">About Me</h2>
+        <p class="section-subtitle reveal">Get to know the person behind the code</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="avatar-wrapper">
+            <svg class="avatar-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#6B46FF"/>
+                  <stop offset="100%" style="stop-color:#FF4B8B"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="90" fill="url(#avatarGradient)" opacity="0.3"/>
+              <circle cx="100" cy="100" r="70" fill="none" stroke="url(#avatarGradient)" stroke-width="2"/>
+              <circle cx="100" cy="100" r="50" fill="none" stroke="url(#avatarGradient)" stroke-width="1" stroke-dasharray="5,5"/>
+              <path d="M100 40 L120 80 L100 100 L80 80 Z" fill="url(#avatarGradient)" opacity="0.5"/>
+              <circle cx="100" cy="100" r="25" fill="url(#avatarGradient)"/>
+              <rect x="60" y="130" width="80" height="10" rx="5" fill="url(#avatarGradient)" opacity="0.6"/>
+              <rect x="70" y="145" width="60" height="8" rx="4" fill="url(#avatarGradient)" opacity="0.4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div class="bio-text">
+            <p>
+              Hey! I'm <strong>Subham Paul</strong>, a passionate Full Stack Developer from Chandigarh, India.
+              I specialize in building modern web applications using <strong>React</strong>, <strong>Node.js</strong>,
+              and exploring the <strong>Web3</strong> ecosystem.
+            </p>
+            <p>
+              Currently pursuing my degree at <strong>Chandigarh University</strong>, I spend most of my time
+              crafting clean, efficient code and contributing to open-source projects. When I'm not coding,
+              you'll find me exploring blockchain technology or mentoring fellow developers.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">17+</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">❤️</span>
+              <span class="stat-label">Open Source</span>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span>Let's Connect</span>
+            </a>
+            <a href="https://github.com/subhamrexpaul" target="_blank" rel="noopener" class="btn btn-outline">
+              <span>GitHub</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">Skills & Technologies</h2>
+        <p class="section-subtitle reveal">My technical toolbox</p>
+      </div>
+      <div class="skills-wrapper">
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="HTML/CSS" data-width="90">
+              <div class="skill-bar-inner">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="JavaScript" data-width="85">
+              <div class="skill-bar-inner">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="React" data-width="80">
+              <div class="skill-bar-inner">
+                <span class="skill-name">React</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="Bootstrap" data-width="85">
+              <div class="skill-bar-inner">
+                <span class="skill-name">Bootstrap</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="Node.js" data-width="75">
+              <div class="skill-bar-inner">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="MongoDB" data-width="70">
+              <div class="skill-bar-inner">
+                <span class="skill-name">MongoDB</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="Python" data-width="80">
+              <div class="skill-bar-inner">
+                <span class="skill-name">Python</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Other</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="Git/GitHub" data-width="85">
+              <div class="skill-bar-inner">
+                <span class="skill-name">Git/GitHub</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="Blockchain/Web3" data-width="65">
+              <div class="skill-bar-inner">
+                <span class="skill-name">Blockchain/Web3</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-skill="TypeScript" data-width="60">
+              <div class="skill-bar-inner">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-fill">
+                  <span class="skill-percent">60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <p class="section-subtitle reveal">Some things I've built</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3c0-1.66 4-3 9-3s9 1.34 9 3z"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5c0-1.66-4-3-9-3s-9 1.34-9 3z"/>
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/subhamrexpaul" target="_blank" rel="noopener" aria-label="View code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="disabled">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Web Automation Framework</h3>
+          <p class="project-description">
+            A comprehensive test automation framework built with Java and Selenium WebDriver.
+            Implements Page Object Model design pattern for maintainable and scalable UI testing.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Selenium</span>
+            <span class="tech-badge">TestNG</span>
+            <span class="tech-badge">Maven</span>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 7 21 11 13 12"/>
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/subhamrexpaul" target="_blank" rel="noopener" aria-label="View code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="disabled">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">API Quality Gate</h3>
+          <p class="project-description">
+            An automated API testing solution using Python and PyTest. Validates REST API endpoints
+            with comprehensive assertion suites and generates detailed test reports.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">PyTest</span>
+            <span class="tech-badge">Requests</span>
+            <span class="tech-badge">Allure</span>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/subhamrexpaul/devportfolio-starter-kit" target="_blank" rel="noopener" aria-label="View code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="https://subhamrexpaul.github.io/devportfolio-starter-kit" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">DevPortfolio Starter Kit</h3>
+          <p class="project-description">
+            A stunning, zero-dependency developer portfolio template. Features dark/light mode,
+            typewriter animations, glassmorphism cards, and GitHub Actions CI integration.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">GitHub Actions</span>
+          </div>
+        </article>
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/subhamrexpaul" target="_blank" rel="noopener" class="btn btn-outline">
+          <span>View All Projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="section-subtitle reveal">Let's build something together</p>
+      </div>
+      <div class="contact-content reveal">
+        <p class="contact-text">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          Feel free to reach out through any of the platforms below.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:subhamrexpaul@example.com" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">subhamrexpaul@example.com</span>
+          </a>
+          <a href="https://linkedin.com/in/subhamrexpaul" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">subhamrexpaul</span>
+          </a>
+          <a href="https://twitter.com/subhampau1" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-3z"/>
+              </svg>
+            </div>
+            <span class="contact-label">Twitter</span>
+            <span class="contact-value">subhampau1</span>
+          </a>
+          <a href="https://instagram.com/rexxbtw" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+              </svg>
+            </div>
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">rexxbtw</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p class="footer-copyright">
+            &copy; <span data-year></span> Subham Paul. All rights reserved.
+          </p>
+          <p class="footer-credit">
+            Made with <span class="heart">❤️</span> + <span class="coffee">☕</span> by Subham Paul
+          </p>
+        </div>
+        <div class="footer-right">
+          <a href="https://github.com/subhamrexpaul/devportfolio-starter-kit" target="_blank" rel="noopener" class="github-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>Star on GitHub</span>
+            <img src="https://img.shields.io/github/stars/subhamrexpaul/devportfolio-starter-kit?style=flat-square&color=6B46FF" alt="GitHub stars" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/typewriter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
