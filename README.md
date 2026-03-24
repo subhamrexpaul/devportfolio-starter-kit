@@ -4,7 +4,7 @@
 
 # 🚀 DevPortfolio Starter Kit
 
-**A stunning, zero-dependency developer portfolio that goes live in 5 minutes**
+**A stunning, zero-dependency developer portfolio. that goes live in 5 minutes**
 
 [![Stars](https://img.shields.io/github/stars/subhamrexpaul/devportfolio-starter-kit?style=for-the-badge&color=6B46FF&labelColor=0F0F1A)](https://github.com/subhamrexpaul/devportfolio-starter-kit/stargazers)
 [![Forks](https://img.shields.io/github/forks/subhamrexpaul/devportfolio-starter-kit?style=for-the-badge&color=FF4B8B&labelColor=0F0F1A)](https://github.com/subhamrexpaul/devportfolio-starter-kit/fork)
@@ -36,7 +36,7 @@
 
 ## 💎 About
 
-DevPortfolio Starter Kit is a **production-ready, zero-dependency** developer portfolio template designed to help you look like a senior frontend developer — even if you're just starting out.
+DevPortfolio Starter Kit is a **production-ready, zero-dependency** developer portfolio. template designed to help you look like a senior frontend developer — even if you're just starting out.
 
 Built with pure HTML, CSS, and vanilla JavaScript, it requires **no build tools, no npm install, no framework knowledge**. Just fork, customize, and deploy.
 
