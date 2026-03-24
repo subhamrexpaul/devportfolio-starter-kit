@@ -36,7 +36,7 @@
 
 ## 💎 About
 
-DevPortfolio Starter Kit is a **production-ready, zero-dependency** developer portfolio template designed to make you look like a senior frontend developer — even if you're just starting out.
+DevPortfolio Starter Kit is a **production-ready, zero-dependency** developer portfolio template designed to help you look like a senior frontend developer — even if you're just starting out.
 
 Built with pure HTML, CSS, and vanilla JavaScript, it requires **no build tools, no npm install, no framework knowledge**. Just fork, customize, and deploy.
 
